@@ -42,20 +42,14 @@ The project implements an enterprise-grade star schema with the following struct
 - **Dim_Patient**: Patient demographics (age, gender, marital status, race, ethnicity, location)
 - **Dim_Organization**: Hospital/clinic information (name, address, location)
 - **Dim_Payer**: Insurance company details (name, headquarters, contact)
-- **Dim_EncounterType**: Encounter classification (ambulatory, emergency, inpatient, wellness, urgent care)
+- **Dim_EncounterClass**: Encounter classification (ambulatory, emergency, inpatient, wellness, urgent care)
+- **Dim_EncounterCode**: EncounterCode type
+- **Dim_EncounterReasonCode**: EncounterReasonCode type
 - **Dim_Procedure**: Procedure classification (code, description, category)
+- **Dim_ProcedureCode**: Procedure Code type
+- **Dim_ProcedureReasonCode**: Procedure ReasonCode type
 - **Dim_Date**: Calendar dimension (date key, year, month, quarter, week, day name, fiscal attributes)
-
-#### **Key Relationships**
-```
-Dim_Patient ──→ Fact_Encounters ←── Dim_Payer
-Dim_Organization ──→ Fact_Encounters ←── Dim_Date
-Dim_EncounterType ──→ Fact_Encounters
-
-Fact_Encounters ──→ Fact_Procedures
-Dim_Procedure ──→ Fact_Procedures
-```
-
+  
 ---
 
 ## 🔄 Data Processing Pipeline
