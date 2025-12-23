@@ -275,48 +275,7 @@ Repeat Patients = CALCULATE(
 - Use measures instead of calculated columns where possible
 
 ---
-
-## 📁 Project Structure
-
-```
-healthcare-analytics-project/
-│
-├── SQL/
-│   ├── 01_Data_Cleaning.sql           # Clean & standardize raw data
-│   ├── 02_Create_Dimensions.sql       # Build dimension tables
-│   ├── 03_Create_Facts.sql            # Build fact tables
-│   ├── 04_Data_Validation.sql         # QA queries
-│   └── 05_Aggregate_Tables.sql        # Performance optimization
-│
-├── PowerBI/
-│   ├── HealthcareAnalytics.pbix       # Main dashboard file
-│   └── DAX_Measures.md                # DAX code reference
-│
-├── Documentation/
-│   ├── Data_Dictionary.md             # Column definitions
-│   ├── Data_Model_Diagram.png         # Star schema visual
-│   └── Business_Requirements.md       # Stakeholder requirements
-│
-├── Data/
-│   ├── Sample_Data/                   # Test datasets
-│   └── Data_Profile_Report.xlsx       # Data quality metrics
-│
-└── README.md                          # This file
-```
-
----
-
 ## 🔍 Data Quality & Validation
-
-### Data Profiling Results
-
-| Table | Rows | Distinct Keys | NULL % | Issues |
-|-------|------|---|---|---|
-| Fact_Encounters | 500,000 | 485,000 | 2.3% | 3% orphan records (handled) |
-| Fact_Procedures | 1,200,000 | 1,195,000 | 0.8% | Some procedures lack diagnosis codes |
-| Dim_Patient | 50,000 | 50,000 | 5% | 5% ZIP codes unknown (marked "Unknown") |
-| Dim_Organization | 250 | 250 | 0% | All clean |
-| Dim_Payer | 80 | 80 | 0% | All clean |
 
 ### QA Checklist (Validation Tests)
 - ✅ Fact totals match source database
@@ -361,8 +320,8 @@ This project is open-source and available for educational and portfolio purposes
 
 **Hemanth Sai Kumar**
 - Data Analyst | SQL | Power BI | Healthcare Analytics
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- LinkedIn: https://www.linkedin.com/in/vadde-hemanth-sai-kumar/
+- GitHub: https://github.com/VaddeHemanthSaiKumar
 
 ---
 
